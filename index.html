@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <title>Uwix Style | KANA Studio</title>
+  <meta charset="UTF-8">
+  <title>KANA Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ICON -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
   <style>
     * {
@@ -14,7 +18,7 @@
     }
 
     body {
-      background: linear-gradient(180deg, #0f172a, #020617);
+      background: radial-gradient(circle at top, #0f172a, #020617);
       color: white;
       min-height: 100vh;
     }
@@ -31,42 +35,54 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      margin: 30px auto 16px;
+      margin: 32px auto 16px;
       border: 3px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56,189,248,.35);
     }
 
     h1 {
       font-size: 22px;
       margin-bottom: 6px;
+      letter-spacing: 0.5px;
     }
 
     .bio {
       font-size: 14px;
       color: #cbd5f5;
-      margin-bottom: 26px;
+      margin-bottom: 28px;
+      line-height: 1.6;
     }
 
     .link {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.12);
       padding: 14px;
       margin-bottom: 14px;
-      border-radius: 12px;
+      border-radius: 14px;
       color: white;
       text-decoration: none;
       font-size: 15px;
       transition: 0.25s;
+      backdrop-filter: blur(6px);
+    }
+
+    .link i {
+      font-size: 18px;
     }
 
     .link:hover {
       background: #38bdf8;
       color: #020617;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(56,189,248,.35);
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 42px;
       font-size: 12px;
       color: #64748b;
     }
@@ -76,25 +92,49 @@
 <body>
   <div class="container">
 
-    <!-- AVATAR -->
+    <!-- AVATAR (GOOGLE DRIVE – TỰ CẬP NHẬT) -->
     <img class="avatar"
-     src="https://drive.google.com/uc?id=13Nzk-HraFEyY85Of4Al60hLzeoBLXJDu"
-     alt="Avatar KANA Studio">
+      src="https://drive.google.com/uc?id=13Nzk-HraFEyY85Of4Al60hLzeoBLXJDu"
+      alt="KANA Studio Avatar">
 
-    <!-- NAME -->
     <h1>KANA Studio</h1>
 
-    <!-- BIO -->
     <p class="bio">
       Quay phim • Chụp ảnh • Livestream <br>
-      081 767 9122 | 086 270 0027
+      📞 081 767 9122 • 086 270 0027
     </p>
 
-    <!-- LINKS -->
-    <a class="link" href="https://facebook.com" target="_blank">Facebook</a>
-    <a class="link" href="https://drive.google.com" target="_blank">Google Drive</a>
-    <a class="link" href="https://zalo.me" target="_blank">Zalo</a>
-    <a class="link" href="#">Website cá nhân</a>
+    <!-- FACEBOOK -->
+    <a class="link"
+       href="https://www.facebook.com/ily.khnh"
+       target="_blank">
+      <i class="fa-brands fa-facebook"></i>
+      Facebook
+    </a>
+
+    <!-- GOOGLE DRIVE (CHUNG) -->
+    <a class="link"
+       href="https://drive.google.com"
+       target="_blank">
+      <i class="fa-brands fa-google-drive"></i>
+      Google Drive
+    </a>
+
+    <!-- ZALO -->
+    <a class="link"
+       href="https://zalo.me"
+       target="_blank">
+      <i class="fa-solid fa-comment"></i>
+      Zalo
+    </a>
+
+    <!-- THƯ VIỆN ẢNH ĐÃ CHỤP (GOOGLE DRIVE – CẬP NHẬT LIÊN TỤC) -->
+    <a class="link"
+       href="https://drive.google.com/drive/folders/1B_6xHZwCo1Vo8PBL7yjBoFYp0Y9_RpYY"
+       target="_blank">
+      <i class="fa-solid fa-image"></i>
+      Thư viện ảnh đã chụp
+    </a>
 
     <footer>
       © 2025 • uwix-style page
@@ -103,4 +143,3 @@
   </div>
 </body>
 </html>
-
